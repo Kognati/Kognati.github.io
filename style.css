@@ -386,6 +386,10 @@ h1, h2, h3 { font-family: var(--font-macro); text-transform: uppercase; }
   background: var(--bg-panel);
 }
 
+.project-unit:nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .unit-header {
   display: flex;
   justify-content: space-between;
