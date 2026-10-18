@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{FULL_NAME}} // {{ROLE}}</title>
+<meta name="description" content="{{FULL_NAME}} — {{ROLE}}. Portfolio placeholder scaffold.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="scanline-overlay" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-grid">
+    <a href="#top" class="logo-mark">[ {{INITIALS}} // PORTFOLIO ]</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#about"><span class="idx">01</span>ABOUT</a>
+      <a href="#stack"><span class="idx">02</span>STACK</a>
+      <a href="#projects"><span class="idx">03</span>PROJECTS</a>
+      <a href="#experience"><span class="idx">04</span>EXPERIENCE</a>
+      <a href="#contact"><span class="idx">05</span>CONTACT</a>
+    </nav>
+    <div class="status-indicator">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-text">STATUS: {{AVAILABILITY_STATUS}}</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-frame">
+      <p class="hero-eyebrow">&gt;&gt;&gt; UNIT CLASSIFICATION: ENGINEER / BUILDER /// REV {{SITE_VERSION}}</p>
+      <h1 class="hero-name">{{FULL_NAME}}</h1>
+      <p class="hero-role">{{ROLE}} <span class="divider">///</span> {{SPECIALIZATION}}</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-cell">
+        <span class="meta-label">LOCATION</span>
+        <span class="meta-value">{{LOCATION}}</span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-label">SYSTEM TIME</span>
+        <span class="meta-value" id="live-clock">00:00:00</span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-label">FOCUS</span>
+        <span class="meta-value">{{PRIMARY_FOCUS}}</span>
+      </div>
+      <div class="meta-cell meta-cell--accent">
+        <span class="meta-label">OPEN TO</span>
+        <span class="meta-value">{{OPEN_TO}}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="section-head">
+      <span class="section-index">01 / 05</span>
+      <h2 id="about-title">ABOUT</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>{{BIO_PARAGRAPH_1 — two or three sentences on who you are, what kind of engineer you are, and what you actually spend your time building.}}</p>
+        <p>{{BIO_PARAGRAPH_2 — a line on what drives the work: a problem space, a philosophy, a kind of system you like building.}}</p>
+      </div>
+      <dl class="about-facts">
+        <div class="fact-row">
+          <dt>YEARS ACTIVE</dt>
+          <dd>{{YEARS_EXPERIENCE}}</dd>
+        </div>
+        <div class="fact-row">
+          <dt>BASE</dt>
+          <dd>{{LOCATION}}</dd>
+        </div>
+        <div class="fact-row">
+          <dt>EDUCATION</dt>
+          <dd>{{DEGREE}} / {{SCHOOL}}</dd>
+        </div>
+        <div class="fact-row">
+          <dt>CURRENTLY</dt>
+          <dd>{{CURRENT_ROLE_OR_STATUS}}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section id="stack" class="section" aria-labelledby="stack-title">
+    <div class="section-head">
+      <span class="section-index">02 / 05</span>
+      <h2 id="stack-title">STACK // MANIFEST</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-column">
+        <h3>LANGUAGES</h3>
+        <ul>
+          <li>{{LANGUAGE_1}}</li>
+          <li>{{LANGUAGE_2}}</li>
+          <li>{{LANGUAGE_3}}</li>
+          <li>{{LANGUAGE_4}}</li>
+        </ul>
+      </div>
+      <div class="stack-column">
+        <h3>FRAMEWORKS</h3>
+        <ul>
+          <li>{{FRAMEWORK_1}}</li>
+          <li>{{FRAMEWORK_2}}</li>
+          <li>{{FRAMEWORK_3}}</li>
+          <li>{{FRAMEWORK_4}}</li>
+        </ul>
+      </div>
+      <div class="stack-column">
+        <h3>INFRASTRUCTURE</h3>
+        <ul>
+          <li>{{INFRA_1}}</li>
+          <li>{{INFRA_2}}</li>
+          <li>{{INFRA_3}}</li>
+          <li>{{INFRA_4}}</li>
+        </ul>
+      </div>
+      <div class="stack-column">
+        <h3>TOOLING</h3>
+        <ul>
+          <li>{{TOOL_1}}</li>
+          <li>{{TOOL_2}}</li>
+          <li>{{TOOL_3}}</li>
+          <li>{{TOOL_4}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="section-head">
+      <span class="section-index">03 / 05</span>
+      <h2 id="projects-title">PROJECTS // UNIT LOG</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-unit">
+        <div class="unit-header">
+          <span class="unit-id">UNIT / 01</span>
+          <span class="unit-status unit-status--active">ACTIVE</span>
+        </div>
+        <h3 class="unit-title">{{PROJECT_1_NAME}}</h3>
+        <p class="unit-desc">{{PROJECT_1_DESCRIPTION — one or two sentences on the problem it solves and your role in it.}}</p>
+        <div class="unit-tags">
+          <span>{{PROJECT_1_TAG_1}}</span>
+          <span>{{PROJECT_1_TAG_2}}</span>
+          <span>{{PROJECT_1_TAG_3}}</span>
+        </div>
+        <div class="unit-links">
+          <a href="{{PROJECT_1_REPO_URL}}">REPO &gt;</a>
+          <a href="{{PROJECT_1_LIVE_URL}}">LIVE &gt;</a>
+        </div>
+      </article>
+
+      <article class="project-unit">
+        <div class="unit-header">
+          <span class="unit-id">UNIT / 02</span>
+          <span class="unit-status unit-status--archived">ARCHIVED</span>
+        </div>
+        <h3 class="unit-title">{{PROJECT_2_NAME}}</h3>
+        <p class="unit-desc">{{PROJECT_2_DESCRIPTION}}</p>
+        <div class="unit-tags">
+          <span>{{PROJECT_2_TAG_1}}</span>
+          <span>{{PROJECT_2_TAG_2}}</span>
+        </div>
+        <div class="unit-links">
+          <a href="{{PROJECT_2_REPO_URL}}">REPO &gt;</a>
+          <a href="{{PROJECT_2_LIVE_URL}}">LIVE &gt;</a>
+        </div>
+      </article>
+
+      <article class="project-unit">
+        <div class="unit-header">
+          <span class="unit-id">UNIT / 03</span>
+          <span class="unit-status unit-status--active">ACTIVE</span>
+        </div>
+        <h3 class="unit-title">{{PROJECT_3_NAME}}</h3>
+        <p class="unit-desc">{{PROJECT_3_DESCRIPTION}}</p>
+        <div class="unit-tags">
+          <span>{{PROJECT_3_TAG_1}}</span>
+          <span>{{PROJECT_3_TAG_2}}</span>
+          <span>{{PROJECT_3_TAG_3}}</span>
+        </div>
+        <div class="unit-links">
+          <a href="{{PROJECT_3_REPO_URL}}">REPO &gt;</a>
+          <a href="{{PROJECT_3_LIVE_URL}}">LIVE &gt;</a>
+        </div>
+      </article>
+
+      <article class="project-unit">
+        <div class="unit-header">
+          <span class="unit-id">UNIT / 04</span>
+          <span class="unit-status unit-status--wip">IN PROGRESS</span>
+        </div>
+        <h3 class="unit-title">{{PROJECT_4_NAME}}</h3>
+        <p class="unit-desc">{{PROJECT_4_DESCRIPTION}}</p>
+        <div class="unit-tags">
+          <span>{{PROJECT_4_TAG_1}}</span>
+          <span>{{PROJECT_4_TAG_2}}</span>
+        </div>
+        <div class="unit-links">
+          <a href="{{PROJECT_4_REPO_URL}}">REPO &gt;</a>
+          <a href="{{PROJECT_4_LIVE_URL}}">LIVE &gt;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="section-head">
+      <span class="section-index">04 / 05</span>
+      <h2 id="experience-title">EXPERIENCE // TIMELINE</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-row">
+        <div class="timeline-date">{{JOB_1_DATES}}</div>
+        <div class="timeline-body">
+          <h3>{{JOB_1_TITLE}} <span class="divider">//</span> {{JOB_1_COMPANY}}</h3>
+          <p>{{JOB_1_DESCRIPTION — one line on scope and impact.}}</p>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="timeline-date">{{JOB_2_DATES}}</div>
+        <div class="timeline-body">
+          <h3>{{JOB_2_TITLE}} <span class="divider">//</span> {{JOB_2_COMPANY}}</h3>
+          <p>{{JOB_2_DESCRIPTION}}</p>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="timeline-date">{{JOB_3_DATES}}</div>
+        <div class="timeline-body">
+          <h3>{{JOB_3_TITLE}} <span class="divider">//</span> {{JOB_3_COMPANY}}</h3>
+          <p>{{JOB_3_DESCRIPTION}}</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+    <div class="section-head">
+      <span class="section-index">05 / 05</span>
+      <h2 id="contact-title">CONTACT</h2>
+    </div>
+    <div class="contact-frame">
+      <p class="contact-eyebrow">&gt;&gt;&gt; CHANNEL OPEN</p>
+      <h2 class="contact-cta">INITIATE<br>CONTACT</h2>
+      <div class="contact-links">
+        <a href="mailto:{{EMAIL_ADDRESS}}">{{EMAIL_ADDRESS}}</a>
+        <a href="{{GITHUB_URL}}">GITHUB &gt;</a>
+        <a href="{{LINKEDIN_URL}}">LINKEDIN &gt;</a>
+        <a href="{{RESUME_URL}}">RESUME.PDF &gt;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <span>© {{YEAR}} {{FULL_NAME}}</span>
+    <span>BUILT WITH STATIC HTML / CSS / JS ® DEPLOYED VIA GITHUB PAGES</span>
+    <span>REV {{SITE_VERSION}}</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
