@@ -297,6 +297,28 @@ h1, h2, h3 { font-family: var(--font-macro); text-transform: uppercase; }
 
 .about-copy p + p { margin-top: 1.25rem; }
 
+.about-photo {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line);
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: grayscale(0.35) contrast(1.05);
+}
+
+.about-photo figcaption {
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--fg-faint);
+}
+
 .about-facts {
   border-top: 1px solid var(--line);
 }
@@ -409,6 +431,44 @@ h1, h2, h3 { font-family: var(--font-macro); text-transform: uppercase; }
 .unit-status--active { color: var(--green); }
 .unit-status--archived { color: var(--fg-faint); }
 .unit-status--wip { color: var(--amber); }
+
+.unit-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.unit-media figure {
+  position: relative;
+  background: var(--bg);
+}
+
+.unit-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.unit-media--diagram img {
+  object-fit: contain;
+  background: #fff;
+}
+
+.unit-media figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.5em 0.85em;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--fg-dim);
+}
 
 .unit-title {
   font-family: var(--font-macro);
